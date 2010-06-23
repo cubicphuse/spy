@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Ludo van den Boom"]
   s.date = %q{2010-06-23}
-  s.description = %q{TODO: longer description of your gem}
+  s.description = %q{Spy on your gems. Setting up project.}
   s.email = %q{ludo@cubicphuse.nl}
   s.extra_rdoc_files = [
     "LICENSE",
@@ -19,6 +19,8 @@ Gem::Specification.new do |s|
   s.files = [
     ".document",
      ".gitignore",
+     "Gemfile",
+     "Gemfile.lock",
      "LICENSE",
      "README.rdoc",
      "Rakefile",
@@ -26,13 +28,14 @@ Gem::Specification.new do |s|
      "lib/spy.rb",
      "spec/spec.opts",
      "spec/spec_helper.rb",
-     "spec/spy_spec.rb"
+     "spec/spy_spec.rb",
+     "spy.gemspec"
   ]
   s.homepage = %q{http://github.com/cubicphuse/spy}
   s.rdoc_options = ["--charset=UTF-8"]
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.3.7}
-  s.summary = %q{TODO: one-line summary of your gem}
+  s.summary = %q{Spy your gems.}
   s.test_files = [
     "spec/spec_helper.rb",
      "spec/spy_spec.rb"
