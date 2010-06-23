@@ -1,4 +1,13 @@
 require 'rubygems'
+require 'bundler'
+begin
+  Bundler.setup(:runtime, :development)
+rescue Bundler::BundlerError => e
+  $stderr.puts e.message
+  $stderr.puts "Run `bundle install` to install missing gems"
+  exit e.status_code
+end
+
 require 'rake'
 
 begin
@@ -10,8 +19,6 @@ begin
     gem.email = "ludo@cubicphuse.nl"
     gem.homepage = "http://github.com/cubicphuse/spy"
     gem.authors = ["Ludo van den Boom"]
-    gem.add_development_dependency "rspec", ">= 1.2.9"
-    # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
   Jeweler::GemcutterTasks.new
 rescue LoadError
